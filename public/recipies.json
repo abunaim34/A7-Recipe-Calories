@@ -5,8 +5,8 @@
       "name": "Spaghetti Bolognese",
       "description": "A delicious and spicy chicken stir-fry loaded with vegetables.",
       "ingredients": ["2 chicken breasts", "Salt and pepper to taste", "1 onion", "2 cloves garlic"],
-      "time": 30,
-      "calories": 350
+      "time": "30 minutes",
+      "calories": "350 calories"
     },
     {
       "recipe_id": 2,
@@ -14,8 +14,8 @@
       "name": "Chicken Caesar Salad",
       "description": "A refreshing and nutritious salad packed with protein and healthy fats.",
       "ingredients": ["1 cup quinoa", "1 avocado",  "1 red bell pepper", "1/4 cup cilantro"],
-      "time": 20,
-      "calories": 300
+      "time": "20 minutes",
+      "calories": "300 calories"
     },
     {
       "recipe_id": 3,
@@ -23,8 +23,8 @@
       "name": "Vegetable Curry",
       "description": "A flavorful and comforting vegetable curry perfect for a cozy dinner.",
       "ingredients": ["2 potatoes", "10g carrot", "2 cloves garlic, minced", "1 cup peas", "2 tomatoes", "1 can coconut milk"],
-      "time": 45,
-      "calories": 280
+      "time": "45 minutes",
+      "calories": "280 calories"
     },
     {
       "recipe_id": 4,
@@ -32,8 +32,8 @@
       "name": "Mediterranean Stuffed Bell Peppers",
       "description": "Colorful bell peppers stuffed with a flavorful mixture of couscous, chickpeas, and Mediterranean spices.",
       "ingredients": ["4 bell peppers", "1 cup couscous", "250g chicken", "1/2 cup feta cheese"],
-      "time": 35,
-      "calories": 320
+      "time": "35 minutes",
+      "calories": "320 calories"
     },
     {
       "recipe_id": 5,
@@ -41,8 +41,8 @@
       "name": "Teriyaki Tofu Bowl",
       "description": "A delicious and satisfying tofu bowl with homemade teriyaki sauce and steamed vegetables.",
       "ingredients": ["500g ground beef", "1 cup cooked rice", "2 tablespoons soy sauce", "1 tablespoon honey"],
-      "time": 25,
-      "calories": 250
+      "time": "25 minutes",
+      "calories": "250 calories"
     },
     {
       "recipe_id": 6,
@@ -50,8 +50,8 @@
       "name": "Spicy Chicken Stir biryani",
       "description": "Juicy chicken breasts stuffed with spinach, feta cheese, and garlic.",
       "ingredients": ["200g chicken breasts", "Basmati rice", "Salt and pepper to taste", "2 cups fresh spinach", "1/2 cup feta cheese"],
-      "time": 40,
-      "calories": 380
+      "time": "40 minutes",
+      "calories": "380 calories"
     }
   ]
   

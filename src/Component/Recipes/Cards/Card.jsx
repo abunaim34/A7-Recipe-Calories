@@ -3,12 +3,12 @@ import { RiFireLine } from "react-icons/ri";
 
 import PropTypes from 'prop-types';
 
-const Card = ({card}) => {
+const Card = ({card, handleWantToCook}) => {
     const {img, name, description, ingredients, time, calories} = card;
     
     return (
         <div className=''>
-            <div className="card w-96 bg-base-100 shadow-xl">
+            <div className="card bg-base-100 shadow-xl">
                 <figure className="px-10 pt-10">
                     <img src={img} alt="Shoes" className="rounded-xl w-[331px] h-[200px]" />
                 </figure>
@@ -26,14 +26,14 @@ const Card = ({card}) => {
                         <div className='flex justify-between gap-6'>
                             <div className="flex items-center gap-1">
                                 <IoMdTime />
-                                <span>{time} minutes</span>
+                                <span>{time}</span>
                             </div>
                             <div className="flex items-center gap-1">
                                 <RiFireLine />
-                                <span>{calories} calories</span>
+                                <span>{calories}</span>
                             </div>
-                        </div>
-                       <button className="btn bg-[#0BE58A] font-semibold rounded-3xl">Want to Cook</button>
+                        </div> 
+                       <button onClick={() => handleWantToCook(card)} className="btn bg-[#0BE58A] font-semibold rounded-3xl">Want to Cook</button>
                     </div>
                 </div>
             </div>
