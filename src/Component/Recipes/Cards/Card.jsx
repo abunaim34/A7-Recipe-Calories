@@ -1,6 +1,5 @@
 import { IoMdTime } from "react-icons/io";
 import { RiFireLine } from "react-icons/ri";
-
 import PropTypes from 'prop-types';
 
 const Card = ({card, handleWantToCook}) => {

@@ -29,7 +29,7 @@ const Header = () => {
         </div>
         <div className="navbar-end">
           <div className="flex items-center gap-2">
-            <div className="form-control relative flex items-start justify-center hidden lg:block">
+            <div className="form-control relative hidden lg:block">
               <IoSearchSharp  className='absolute text-xl ml-3 top-4' />
               <input type="text" placeholder="Search"  className="input input-bordered w-24 md:w-auto pl-10" />
             </div>

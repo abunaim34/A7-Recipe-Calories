@@ -32,7 +32,6 @@ const Carts = ({carts, handleRemoveWantToCook, recipes, times, calories}) => {
                 }
                 </tbody> 
             </table>
-
             <div className='overflow-x-auto'>
                 <h1 className='text-xl font-bold pb-4 mt-8 lg:px-12'>Currently cooking: {recipes.length}</h1>
                 <hr className='mx-16'/>
@@ -62,7 +61,6 @@ const Carts = ({carts, handleRemoveWantToCook, recipes, times, calories}) => {
                     </tbody> 
                 </table>
             </div>
-
             <div className='flex justify-end text-start gap-5 pr-5 font-semibold mt-4 text-[#282828CC]'>
                 <div>
                     <p>Total Time = <br /> {times} minutes</p>
