@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <div className='mx-32 my-12'>
+      <div className='lg:mx-32 my-12'>
         <Header></Header>
         <Banner></Banner>
         <Recipes></Recipes>

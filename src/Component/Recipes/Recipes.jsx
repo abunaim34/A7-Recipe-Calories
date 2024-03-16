@@ -22,8 +22,9 @@ const Recipes = () => {
         if(!isExists){
             const newCarts = [...carts, cart]
             setCarts(newCarts)
+        }else{
+            return toast.warn(" Already exsits !")
         }
-        return toast.warn(" Already exsits !")
     }
 
     const handleRemoveWantToCook = (recipe) => {
@@ -40,7 +41,7 @@ const Recipes = () => {
             <div className='text-center my-24'>
                 <h1 className='text-4xl font-bold'>Our Recipes</h1>
                 <p className='tex-[#12132D99] pt-5 mx-auto lg:w-[690px]'>Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus vulputate netus pharetra rhoncus. Eget urna volutpat curabitur elementum mauris aenean neque. </p>
-                <div className='flex justify-between gap-6 mt-12'>
+                <div className='flex flex-col-reverse lg:flex-row justify-between gap-6 mt-12'>
                     <div className=''>
                      <Cards cards={cards} handleWantToCook={handleWantToCook}></Cards>
                     </div>

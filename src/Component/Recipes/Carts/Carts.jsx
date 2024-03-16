@@ -1,11 +1,8 @@
-
 import PropTypes from 'prop-types';
-import { RiBold } from 'react-icons/ri';
 
 const Carts = ({carts, handleRemoveWantToCook, recipes, times}) => {
-    console.log(times)
     return (
-        <div className="overflow-x-auto w-[400px]">
+        <div className="overflow-x-auto lg:w-[400px]">
             <h1 className='text-xl  font-bold pb-4 mt-8 px-12'>Want to cook: {carts.length}</h1>
             <hr className='mx-20'/>
             <table className="table table-xs table-pin-rows table-pin-cols mt-6">
@@ -36,8 +33,6 @@ const Carts = ({carts, handleRemoveWantToCook, recipes, times}) => {
                 </tbody> 
             </table>
 
-
-            
             <div className='overflow-x-auto'>
                 <h1 className='text-xl font-bold pb-4 mt-8 px-12'>Currently cooking: {recipes.length}</h1>
                 <hr className='mx-16'/>
@@ -81,7 +76,8 @@ const Carts = ({carts, handleRemoveWantToCook, recipes, times}) => {
 };
 
 Carts.propTypes = {
-    carts: PropTypes.object.isRequired
+    carts: PropTypes.object.isRequired,
+    handleRemoveWantToCook: PropTypes.func.isRequired
 };
 
 export default Carts;
