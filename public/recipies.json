@@ -1,0 +1,57 @@
+[
+    {
+      "recipe_id": 1,
+      "img": "https://i.ibb.co/J21XPv7/Rectangle-20170.png",
+      "name": "Spaghetti Bolognese",
+      "description": "A delicious and spicy chicken stir-fry loaded with vegetables.",
+      "ingredients": ["2 chicken breasts", "Salt and pepper to taste", "1 onion", "2 cloves garlic"],
+      "time": 30,
+      "calories": 350
+    },
+    {
+      "recipe_id": 2,
+      "img": "https://i.ibb.co/crPS0R6/Rectangle-20170-1.png",
+      "name": "Chicken Caesar Salad",
+      "description": "A refreshing and nutritious salad packed with protein and healthy fats.",
+      "ingredients": ["1 cup quinoa", "1 avocado",  "1 red bell pepper", "1/4 cup cilantro"],
+      "time": 20,
+      "calories": 300
+    },
+    {
+      "recipe_id": 3,
+      "img": "https://i.ibb.co/Qd50MZc/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg",
+      "name": "Vegetable Curry",
+      "description": "A flavorful and comforting vegetable curry perfect for a cozy dinner.",
+      "ingredients": ["2 potatoes", "10g carrot", "2 cloves garlic, minced", "1 cup peas", "2 tomatoes", "1 can coconut milk"],
+      "time": 45,
+      "calories": 280
+    },
+    {
+      "recipe_id": 4,
+      "img": "https://i.ibb.co/f8D1zCT/Tater-Tot-Chaat-HERO.webp",
+      "name": "Mediterranean Stuffed Bell Peppers",
+      "description": "Colorful bell peppers stuffed with a flavorful mixture of couscous, chickpeas, and Mediterranean spices.",
+      "ingredients": ["4 bell peppers", "1 cup couscous", "250g chicken", "1/2 cup feta cheese"],
+      "time": 35,
+      "calories": 320
+    },
+    {
+      "recipe_id": 5,
+      "img": "https://i.ibb.co/KKrvjJ9/delish-230815-tuscan-tortellini-skillet-bake-0364-eb-secondary-64fa7001ed5ab.jpg",
+      "name": "Teriyaki Tofu Bowl",
+      "description": "A delicious and satisfying tofu bowl with homemade teriyaki sauce and steamed vegetables.",
+      "ingredients": ["500g ground beef", "1 cup cooked rice", "2 tablespoons soy sauce", "1 tablespoon honey"],
+      "time": 25,
+      "calories": 250
+    },
+    {
+      "recipe_id": 6,
+      "img": "https://i.ibb.co/k8qH621/instant-pot-jambalaya-1674050072.jpg",
+      "name": "Spicy Chicken Stir biryani",
+      "description": "Juicy chicken breasts stuffed with spinach, feta cheese, and garlic.",
+      "ingredients": ["200g chicken breasts", "Basmati rice", "Salt and pepper to taste", "2 cups fresh spinach", "1/2 cup feta cheese"],
+      "time": 40,
+      "calories": 380
+    }
+  ]
+  
