@@ -13,7 +13,8 @@ const Cards = ({cards, handleWantToCook}) => {
 };
 
 Cards.propTypes = {
-    cards: PropTypes.object.isRequired
+    cards: PropTypes.object.isRequired,
+    handleWantToCook: PropTypes.func.isRequired
 };
 
 export default Cards;

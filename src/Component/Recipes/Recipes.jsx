@@ -7,6 +7,8 @@ import { useEffect, useState } from 'react';
 const Recipes = () => {
     const [cards, setCards] = useState([])
     const [carts, setCarts] = useState([])
+    const [recipes, setRecipes] = useState([])
+    // const [times, setTimes] = useState(0)
 
     useEffect(() => {
         fetch('./recipies.json')
@@ -15,13 +17,21 @@ const Recipes = () => {
     }, [])
 
     const handleWantToCook = (cart) => {
-        const newCarts = [...carts, cart]
-        setCarts(newCarts)
+        const isExists = carts.find(c => c.recipe_id == cart.recipe_id)
+        if(!isExists){
+            const newCarts = [...carts, cart]
+            setCarts(newCarts)
+        }
     }
 
-    // const handleRemoveWantToCook = () => {
-    //     console.log('clcic remove')
-    // }
+    const handleRemoveWantToCook = (recipe) => {
+        const removewantToCook = carts.filter(cart => cart.recipe_id != recipe.recipe_id)
+        setCarts(removewantToCook);
+        const newRecipes = [...recipes, recipe]
+        setRecipes(newRecipes)
+        // const newTimes = times + recipe.time;
+        // setTimes(newTimes)
+    }
 
     return (
         <div>
@@ -34,7 +44,7 @@ const Recipes = () => {
                     </div>
                     <div>
                       <div className='border rounded-2xl text-center'>
-                        <Carts carts={carts}></Carts>
+                        <Carts carts={carts} handleRemoveWantToCook={handleRemoveWantToCook} recipes={recipes}></Carts>
                       </div>
                     </div>
                 </div>
