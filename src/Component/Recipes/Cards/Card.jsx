@@ -26,11 +26,11 @@ const Card = ({card, handleWantToCook}) => {
                         <div className='flex justify-between gap-6'>
                             <div className="flex items-center gap-1">
                                 <IoMdTime />
-                                <span>{time}</span>
+                                <span>{time} minutes</span>
                             </div>
                             <div className="flex items-center gap-1">
                                 <RiFireLine />
-                                <span>{calories}</span>
+                                <span>{calories} calories</span>
                             </div>
                         </div> 
                        <button onClick={() => handleWantToCook(card)} className="btn bg-[#0BE58A] font-semibold rounded-3xl">Want to Cook</button>
@@ -42,7 +42,8 @@ const Card = ({card, handleWantToCook}) => {
 };
 
 Card.propTypes = {
-    card: PropTypes.object.isRequired
+    card: PropTypes.object.isRequired,
+    handleWantToCook: PropTypes.object.isRequired
 };
 
 export default Card;

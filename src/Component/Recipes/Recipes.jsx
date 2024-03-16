@@ -1,6 +1,5 @@
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import PropTypes from 'prop-types';
 import Cards from './Cards/Cards';
 import Carts from './Carts/Carts';
 import { useEffect, useState } from 'react';
@@ -9,7 +8,8 @@ const Recipes = () => {
     const [cards, setCards] = useState([])
     const [carts, setCarts] = useState([])
     const [recipes, setRecipes] = useState([])
-    // const [times, setTimes] = useState(0)
+    const [times, setTimes] = useState(0)
+    const [calories, setCalories] = useState(0)
 
     useEffect(() => {
         fetch('./recipies.json')
@@ -32,22 +32,22 @@ const Recipes = () => {
         setCarts(removewantToCook);
         const newRecipes = [...recipes, recipe]
         setRecipes(newRecipes)
-        // const newTimes = times + recipe.time;
-        // setTimes(newTimes)
+        setTimes(times + recipe.time)
+        setCalories(calories + recipe.calories)
     }
 
     return (
         <div>
             <div className='text-center my-24'>
                 <h1 className='text-4xl font-bold'>Our Recipes</h1>
-                <p className='tex-[#12132D99] pt-5 mx-auto lg:w-[690px]'>Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus vulputate netus pharetra rhoncus. Eget urna volutpat curabitur elementum mauris aenean neque. </p>
+                <p className='tex-[#12132D99] pt-5 mx-auto lg:w-[690px]'>Explore a tantalizing array of recipes, from savory classic to sweet delights. Let our diverse collection inspire your next culinary masterpiece. </p>
                 <div className='flex flex-col-reverse lg:flex-row justify-between gap-6 mt-12'>
-                    <div className=''>
+                    <div>
                      <Cards cards={cards} handleWantToCook={handleWantToCook}></Cards>
                     </div>
                     <div>
                       <div className='border rounded-2xl text-center'>
-                        <Carts carts={carts} handleRemoveWantToCook={handleRemoveWantToCook} recipes={recipes}></Carts>
+                        <Carts carts={carts} handleRemoveWantToCook={handleRemoveWantToCook} recipes={recipes} times={times} calories={calories}></Carts>
                       </div>
                     </div>
                 </div>
@@ -55,10 +55,6 @@ const Recipes = () => {
             <ToastContainer />
         </div>
     );
-};
-
-Recipes.propTypes = {
-    PropTypes
 };
 
 export default Recipes;
