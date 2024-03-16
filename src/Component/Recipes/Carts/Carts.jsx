@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 const Carts = ({carts, handleRemoveWantToCook, recipes, times}) => {
     return (
         <div className="overflow-x-auto lg:w-[400px]">
-            <h1 className='text-xl  font-bold pb-4 mt-8 px-12'>Want to cook: {carts.length}</h1>
+            <h1 className='text-xl  font-bold pb-4 mt-8 lg:px-12'>Want to cook: {carts.length}</h1>
             <hr className='mx-20'/>
             <table className="table table-xs table-pin-rows table-pin-cols mt-6">
                 <thead>
@@ -34,7 +34,7 @@ const Carts = ({carts, handleRemoveWantToCook, recipes, times}) => {
             </table>
 
             <div className='overflow-x-auto'>
-                <h1 className='text-xl font-bold pb-4 mt-8 px-12'>Currently cooking: {recipes.length}</h1>
+                <h1 className='text-xl font-bold pb-4 mt-8 lg:px-12'>Currently cooking: {recipes.length}</h1>
                 <hr className='mx-16'/>
                 <table className="table table-xs table-pin-rows table-pin-cols mt-6">
                     <thead>
