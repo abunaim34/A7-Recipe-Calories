@@ -1,4 +1,5 @@
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import PropTypes from 'prop-types';
 import Cards from './Cards/Cards';
 import Carts from './Carts/Carts';
@@ -22,6 +23,7 @@ const Recipes = () => {
             const newCarts = [...carts, cart]
             setCarts(newCarts)
         }
+        return toast.warn(" Already exsits !")
     }
 
     const handleRemoveWantToCook = (recipe) => {
@@ -49,6 +51,7 @@ const Recipes = () => {
                     </div>
                 </div>
             </div>
+            <ToastContainer />
         </div>
     );
 };
